@@ -21,7 +21,7 @@ export default function RegisterPage() {
     e.preventDefault();
     setError("");
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/register`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/user/register`, {
         method: "POST",
         body: JSON.stringify({ name, email, password }),
         headers: { "Content-Type": "application/json" },
