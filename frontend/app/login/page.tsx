@@ -33,13 +33,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-[80vh]">
+    <div className="flex items-center justify-center min-h-[80vh] px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
+        className="w-full max-w-[400px]"
       >
-        <Card className="w-[400px] shadow-lg border-2 border-primary/20 backdrop-blur-sm bg-background/80">
+        <Card className="w-full shadow-lg border-2 border-primary/20 backdrop-blur-sm bg-background/80">
           <CardHeader className="text-center">
             <motion.div
               initial={{ rotate: -15 }}
